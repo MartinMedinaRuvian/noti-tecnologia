@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'poppin';
+    src: url('fonts/Poppins-Medium.ttf');
+    font-display: swap;
+}
+
+:root {
+    --color-rojo: #E08E79;
+    --color-claro: #ECE5CE;
+    --color-verde: #C5E0DC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppin;
+    background: rgb(245,244,252);
+    background: linear-gradient(90deg, rgba(245,244,252,1) 0%, rgba(191,255,147,1) 0%, rgba(0,255,196,1) 100%);
+}
+
+.contenedor{
+    width: 85%;
+    margin: auto;
+}
+
+.navegacion{
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+}
+
+.navegacion h1{
+    color: var(--color-verde);
+}
+
+.navegacion a{
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+
+.header{
+    margin-bottom: 5px;
+}
+
+.header .sobre{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.header .sobre p{
+    width: 50%;
+    font-size: 18px;
+}
+
+.header .sobre img{
+    border-radius: 15px;
+    width: 50%;
+}
+
+.noticias{
+    background-color: #212121;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.noticias article{
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 350px;
+    border: solid var(--color-claro);
+    padding: 10px;
+}
+
+.noticias article h3{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--color-rojo);
+}
+
+.noticias article p{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.noticias article img, .noticias article iframe{
+    width: 100%;
+    height: 200px;
+}
+
+.noticias article a{
+    color: var(--color-verde);
+    text-align: right;
+    text-decoration: none;
+    border: solid var(--color-rojo);
+    border-radius: 10px;
+    padding: 5px;   
+}
+
+
+.footer{
+    background-color: #fff;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer a{
+    color: #212121;
+    text-decoration: none;
+}
+
+.footer .contenedor-general{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer .contenedor-general .red-social{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    align-content: space-between;
+    flex-direction: row;
+}
+
+.footer .contenedor-general .red-social .icono{
+    margin-top: 0;
+}
+
+@media (max-width:817px) {
+    .contenedor{
+        width: 95%;
+    }
+}
