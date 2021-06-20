@@ -31,6 +31,7 @@ body{
     padding: 10px;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #212121;
 }
@@ -83,6 +84,7 @@ body{
     max-width: 350px;
     border: solid var(--color-claro);
     padding: 10px;
+    height: 750px;
 }
 
 .noticias article h3{
@@ -144,6 +146,14 @@ body{
 
 .footer .contenedor-general .red-social .icono{
     margin-top: 0;
+}
+
+.footer .powerby{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 50px;
+    padding: 30px;
 }
 
 @media (max-width:817px) {
